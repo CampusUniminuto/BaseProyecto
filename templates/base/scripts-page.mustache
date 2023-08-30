@@ -1,0 +1,17 @@
+      <!--begin::Javascript-->
+        <script>var hostUrl = "assets/";</script>
+        <!-- begin::Global Javascript Bundle(mandatory for all pages) -->
+        <script src="{{{path_base}}}/js/plugins/plugins.bundle.js"></script>
+        <script src="{{{path_base}}}/js/base/scripts.bundle.js"></script>
+        <!--end::Global Javascript Bundle-->
+        
+        <!--begin::Vendors Javascript(used for this page only)-->
+        {{#js_scripts_vendor}}<script src="{{{url_js}}}"></script>{{/js_scripts_vendor}}
+        <!--end::Vendors Javascript-->
+
+        <!--begin::Custom Javascript(used for this page only)-->
+        {{#js_scripts}}<script src="{{{url_js}}}"></script>{{/js_scripts}}
+        <!--end::Custom Javascript-->
+      <!--end::Javascript-->
+  </body>
+</html>
